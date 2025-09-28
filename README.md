@@ -70,3 +70,61 @@ Placeholder image file.
 3. Install dependencies from `requirements.txt`.
 4. Run `advisory_pipeline.py` to generate and deliver advisories.
 
+## Running the Flask Backend
+
+To start the API server, run this command in your terminal from the SIH directory:
+
+```
+python api.py
+```
+
+- This will start the server at `http://127.0.0.1:8000`
+- Use `/advisory`, `/speech`, and `/audio` endpoints as before.
+
+---
+   Run the following command in your terminal:
+   ```
+   uvicorn api:app --reload
+   ```
+   - This will start the FastAPI server at `http://127.0.0.1:8000`.
+
+4. **Access the API**  
+   - Use the `/advisory` endpoint for text queries.
+   - Use the `/speech` endpoint for speech queries.
+   - Use the `/audio` endpoint to get the generated advisory audio.
+
+5. **(Optional) Frontend**  
+   Open `index.html` in your browser to interact with the API.
+
+## Troubleshooting: FastAPI/uvicorn "unreachable" issue
+
+If you see `INFO: Uvicorn running on http://127.0.0.1:8000` but cannot access it in your browser:
+
+1. **Check the endpoint:**  
+   - The root URL `/` does not serve a page by default.
+   - Try accessing the docs at:  
+     ```
+     http://127.0.0.1:8000/docs
+     ```
+   - Or test the `/advisory` endpoint using a tool like [Postman](https://www.postman.com/) or `curl`.
+
+2. **Firewall/Antivirus:**  
+   - Ensure your firewall or antivirus is not blocking Python or port 8000.
+
+3. **Port conflict:**  
+   - Make sure no other service is using port 8000.
+
+4. **Network:**  
+   - If running in a VM or container, check network settings.
+
+5. **Code errors:**  
+   - Check the terminal for any error messages after startup.
+
+6. **Static files:**  
+   - If you want to serve your frontend (`index.html`), you need to use a static files mount in FastAPI or open the HTML file directly in your browser.
+
+---
+
+**To test the API quickly:**
+- Go to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) for the interactive Swagger UI.
+
