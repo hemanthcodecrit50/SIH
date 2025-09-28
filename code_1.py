@@ -9,7 +9,7 @@ import os
 
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyChVzmf5YmhlEo8Z8ru4y4Dv7d40n7KCVE")   # Replace with your API key
+genai.configure(api_key="")   # Replace with your API key
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 # Sample farmer profile data
