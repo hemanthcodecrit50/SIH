@@ -1,0 +1,10 @@
+transformers
+torch
+faiss-cpu
+redis
+twilio
+gtts
+reportlab
+requests
+python-dotenv
+sentence-transformers

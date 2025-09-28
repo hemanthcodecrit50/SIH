@@ -1,0 +1,8 @@
+{"query": "What fertilizer should I use for wheat?", "intent": "crop_advisory"}
+{"query": "Is there rain expected tomorrow?", "intent": "weather_update"}
+{"query": "What is the price of rice in the market?", "intent": "market_info"}
+{"query": "How do I control pests in my cotton field?", "intent": "pest_alert"}
+{"query": "Tell me about government schemes for farmers.", "intent": "scheme_info"}
+{"query": "How much water should I give to tomatoes?", "intent": "crop_advisory"}
+{"query": "What is MSP for maize?", "intent": "market_info"}
+{"query": "What is the best time to sow paddy?", "intent": "faq"}
