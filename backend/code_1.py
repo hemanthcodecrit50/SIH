@@ -9,7 +9,7 @@ import os
 
 
 # Configure Gemini API
-genai.configure(api_key="")   # Replace with your API key
+genai.configure(api_key="AIzaSyChVzmf5YmhlEo8Z8ru4y4Dv7d40n7KCVE")   # Replace with your API key
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 # Sample farmer profile data
@@ -377,4 +377,4 @@ def main():
 if __name__ == '_main_':
     print("🔑 Make sure to set your GEMINI_API_KEY in the code!")
     print("🚀 Starting Farmer Advisory System...\n")
-main()
+    main()

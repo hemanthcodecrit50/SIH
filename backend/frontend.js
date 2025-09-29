@@ -2,7 +2,7 @@ async function getAdvisory() {
     const query = document.getElementById("query").value;
     const formData = new FormData();
     formData.append("query", query);
-    const response = await fetch("/advisory", {
+    const response = await fetch("http://127.0.0.1:8000/advisory", {
         method: "POST",
         body: formData
     });
